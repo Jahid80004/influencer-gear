@@ -1,0 +1,293 @@
+              /* main-body-style */
+body{
+    
+    font-family: 'Libre Franklin', sans-serif;
+    /* background-color: rgba(181, 230, 253, 0.411); */
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+    /* .main-title-section */
+
+.main-title>div{
+    width: 50%;
+    display: flex;
+    justify-items: space-between;
+    
+   
+}
+
+
+            /* nav bar style */
+.nav div{
+    display: flex;
+    
+
+}
+.nav-section{
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.nav-section ul a{
+    text-decoration: none;
+
+}
+
+          /* webite title style */
+
+.main-title{
+    display: flex;
+    justify-content: left;
+    padding-left: 70px;
+}
+
+
+             /* 1st secton flex-items */
+.flex-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
+
+  
+}
+.flex-items>div>h1{
+font-size: 3em;
+}
+.flex-items div{
+    width: 50%;
+}
+.flex-items img{
+    width: 70%;
+    margin-left: 30px;
+
+    
+}
+
+.rotating-img:hover{
+    transform: rotate(360deg);
+    
+    transition-duration: 1s;
+    
+    
+}
+         /* button-style */
+.button{
+    text-decoration: none;
+    background-color:#E02C6D;
+
+    padding: 12px 26px;
+    color: whitesmoke;
+    border-radius: 15px;
+
+}
+        /* logo section */
+
+.logos-section{
+    margin-top: 120px;
+}
+.logos {
+    display: flex;
+    justify-content: center;
+    column-gap: 80px;
+
+}
+
+  /* Popular section */
+.section-title{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 40px ;
+}
+.popular-collection{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 196px;
+    padding-right: 196px;
+    
+
+
+}
+.item{
+   
+    
+    height: 480px;
+    width: 329px;
+    background-color: whitesmoke;
+    border-radius: 4%;
+    margin: 25px;
+    font-size: 15px;
+
+}
+
+   
+.item img{
+    height: 256px;
+    width: 320px;
+    padding: 5px;
+}
+.articles{
+    padding: 10px;
+}
+.articles>p{
+    font-size: 12px;
+}
+.filled {
+    font-size: 10px;
+    color: goldenrod;
+}
+.empty{
+     font-size: 10px;
+    color: goldenrod;
+
+}
+       /* see more button style */
+
+#see-more-button a {
+    
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px 26px;
+    color: #E02C6D;
+    border-radius: 15px;
+    
+}
+#see-more-button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+}                 
+               /* featured-products */
+.featured-products{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+.featured-products div{
+    width: 50%;
+    
+}
+
+.featured-products img{
+    width: 80%
+}
+
+.featured-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.featured-products-articles{
+    padding-right: 130px ;
+
+}
+          /* footer section */
+
+footer{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    width: 1fr;
+    height: 200px;
+    background-color:#0A0826;
+    color: azure;
+    margin-top: 80px;
+}
+
+footer div{
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+             /* media query
+         /* ------------------- */
+
+/* Responsible style Mobile phones */
+
+@media (max-width: 688px) {
+    
+   .flex-items{
+       flex-direction: column;
+       margin: 0;
+       
+   } 
+   .flex-items img{
+       width: 60%;
+   }
+   .flex-items>div>h1{
+       font-size: 2.5em;
+   }
+   .main-title{
+       justify-content: center;
+   }
+   .rotating-img{
+       margin-top: 10px;   
+   }
+   .logos{
+    flex-wrap: wrap;
+
+   }
+   .popular-collection{
+    grid-template-columns: 1fr;
+   }
+
+   .featured-products-articles{
+    padding: 0;
+
+
+    }
+   .featured-products{
+    flex-direction: column;
+    align-items: center;
+     }
+    .featured-products img{
+    width: 100%;
+    }
+    .flex-items div{
+    width: 95%;
+    }
+}
+
+/* responsible style for tabs */
+
+@media (min-width: 679px) {
+
+    .popular-collection{
+        grid-template-columns: 1fr 1fr;
+       }
+    .logos{
+    flex-wrap: wrap;
+    
+}
+
+@media (min-width: 993px) {
+
+    .popular-collection{
+        grid-template-columns: 1fr 1fr 1fr;
+       }
+       .logos{
+        flex-wrap: wrap;
+}
+  
+
+  
+
+
